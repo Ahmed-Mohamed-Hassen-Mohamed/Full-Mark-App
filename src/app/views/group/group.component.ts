@@ -58,8 +58,8 @@ export class GroupComponent {
       },
     });
   }
-  openDailog() {
-    let dailog = this.dailog.open(QrcodeComponent, {data: { id: this.id }});
-    dailog.afterClosed().subscribe((result) => {});
-  }
+  // openDailog() {
+  //   let dailog = this.dailog.open(QrcodeComponent, {data: { id: this.id }});
+  //   dailog.afterClosed().subscribe((result) => {});
+  // }
 }
