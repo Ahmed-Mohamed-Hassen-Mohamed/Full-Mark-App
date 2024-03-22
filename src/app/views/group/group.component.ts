@@ -3,7 +3,6 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { ExamService } from 'src/app/services/exam.service';
 import { GroupService } from 'src/app/services/group.service';
 import { UserService } from 'src/app/services/user.service';
-import { QrcodeComponent } from '../qrcode/qrcode.component';
 import { MatDialog } from '@angular/material/dialog';
 
 @Component({
