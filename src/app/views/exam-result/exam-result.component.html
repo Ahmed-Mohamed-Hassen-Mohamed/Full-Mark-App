@@ -1,7 +1,7 @@
-<div class="container mt-5 pb-5">
+<div class="container pt-5 pb-5" style="overflow: hidden">
   <div class="row position-relative">
     <div
-      class="col-10 row m-0 m-auto card p-5 pt-4"
+      class="col-lg-10 col-md-11 row m-0 m-auto card p-lg-5 pt-4"
       style="border: 3px solid #436850"
     >
       <div
@@ -112,7 +112,10 @@
             {{ question.choice2 }}
           </p>
         </div>
-        <div class="form-check mb-2 p-0 bg-light text-muted fs-5" *ngIf="question.choice3">
+        <div
+          class="form-check mb-2 p-0 bg-light text-muted fs-5"
+          *ngIf="question.choice3"
+        >
           <p
             *ngIf="question.answer != 3 && question.Answer.answer != 3"
             class="fs p-4 pt-1 pb-1"
@@ -144,7 +147,10 @@
             {{ question.choice3 }}
           </p>
         </div>
-        <div class="form-check mb-2 p-0 bg-light text-muted fs-5" *ngIf="question.choice4">
+        <div
+          class="form-check mb-2 p-0 bg-light text-muted fs-5"
+          *ngIf="question.choice4"
+        >
           <p
             *ngIf="question.answer != 4 && question.Answer.answer != 4"
             class="fs p-4 pt-1 pb-1"
