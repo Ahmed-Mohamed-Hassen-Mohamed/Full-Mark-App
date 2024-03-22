@@ -23,8 +23,6 @@ import { HeaderComponent } from './layout/header/header.component';
 import { DashboardComponent } from './views/dashboard/dashboard.component';
 import { ProfileComponent } from './views/profile/profile.component';
 import { swiperModule } from './swiper/swiper.module';
-import { QrcodeComponent } from './views/qrcode/qrcode.component';
-import { QRCodeModule } from 'angularx-qrcode';
 import { ResultsComponent } from './views/results/results.component';
 
 @NgModule({
@@ -43,7 +41,6 @@ import { ResultsComponent } from './views/results/results.component';
     HeaderComponent,
     DashboardComponent,
     ProfileComponent,
-    QrcodeComponent,
     ResultsComponent,
   ],
   imports: [
@@ -55,7 +52,6 @@ import { ResultsComponent } from './views/results/results.component';
     BrowserAnimationsModule,
     MaterialModule,
     swiperModule,
-    QRCodeModule
   ],
   providers: [
     AuthService,
