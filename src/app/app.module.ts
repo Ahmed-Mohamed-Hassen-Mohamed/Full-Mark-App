@@ -23,6 +23,7 @@ import { HeaderComponent } from './layout/header/header.component';
 import { DashboardComponent } from './views/dashboard/dashboard.component';
 import { ProfileComponent } from './views/profile/profile.component';
 import { ResultsComponent } from './views/results/results.component';
+import { QrcodeComponent } from './views/qrcode/qrcode.component';
 import { QRCodeModule } from 'angularx-qrcode';
 
 @NgModule({
@@ -42,6 +43,7 @@ import { QRCodeModule } from 'angularx-qrcode';
     DashboardComponent,
     ProfileComponent,
     ResultsComponent,
+    QrcodeComponent
   ],
   imports: [
     BrowserModule,
