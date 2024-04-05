@@ -22,8 +22,8 @@ import { GroupComponent } from './views/group/group.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { DashboardComponent } from './views/dashboard/dashboard.component';
 import { ProfileComponent } from './views/profile/profile.component';
-import { swiperModule } from './swiper/swiper.module';
 import { ResultsComponent } from './views/results/results.component';
+import { QRCodeModule } from 'angularx-qrcode';
 
 @NgModule({
   declarations: [
@@ -51,7 +51,7 @@ import { ResultsComponent } from './views/results/results.component';
     HttpClientModule,
     BrowserAnimationsModule,
     MaterialModule,
-    swiperModule,
+    QRCodeModule
   ],
   providers: [
     AuthService,
