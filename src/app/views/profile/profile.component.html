@@ -228,7 +228,9 @@
                     exam.exam.owner.firstname + " " + exam.exam.owner.lastname
                   }}
                 </td>
-                <td class="text-danger">{{ exam.mark * 100 + "%" }}</td>
+                <td class="text-danger"> 
+                  {{ exam.mark ? exam.mark * 100 + "%" : ".-.-.-." }}
+                </td>
               </tr>
             </tbody>
           </table>
