@@ -4,6 +4,7 @@ import { ExamService } from 'src/app/services/exam.service';
 import { GroupService } from 'src/app/services/group.service';
 import { UserService } from 'src/app/services/user.service';
 import { MatDialog } from '@angular/material/dialog';
+import { QrcodeComponent } from '../qrcode/qrcode.component';
 
 @Component({
   selector: 'app-group',
