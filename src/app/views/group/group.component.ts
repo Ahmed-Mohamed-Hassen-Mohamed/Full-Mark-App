@@ -59,7 +59,7 @@ export class GroupComponent {
     });
   }
   openDailog() {
-    let dailog = this.dailog.open(QrcodeComponent, {data: { id: this.id }});
+    let dailog = this.dailog.open(QrcodeComponent, {data: { code: this.group.code }});
     dailog.afterClosed().subscribe((result) => {});
   }
 }
