@@ -10,7 +10,7 @@ import { BehaviorService } from 'src/app/services/behavior.service';
 })
 export class SignupComponent {
   hide = true;
-
+  message?:string;
   constructor(
     private authService: AuthService,
     private behaviorService: BehaviorService,
@@ -25,7 +25,10 @@ export class SignupComponent {
         this.behaviorService.updateData('false');
         this.router.navigateByUrl('/');
       },
-      error: (err: any) => {},
+      error: (err: any) => {
+        this.message = err.error.message;
+        this.message = this.message?.substring(34)
+      },
     });
   }
   year?: number;
