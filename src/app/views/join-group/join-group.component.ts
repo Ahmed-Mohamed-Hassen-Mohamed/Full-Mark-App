@@ -22,7 +22,14 @@ export class JoinGroupComponent {
       },
       error: (err: any) => {
         if (err.error == 'You are in this group') {
-          let dailog = this.dailog.open(DashboardComponent);
+          let dailog = this.dailog.open(DashboardComponent, {
+            data: { message: 'You are in this group' },
+          });
+          dailog.afterClosed().subscribe((result) => {});
+        } else if (err.error == 'Invalid Code') {
+          let dailog = this.dailog.open(DashboardComponent, {
+            data: { message: 'Invalid Code' },
+          });
           dailog.afterClosed().subscribe((result) => {});
         }
       },
