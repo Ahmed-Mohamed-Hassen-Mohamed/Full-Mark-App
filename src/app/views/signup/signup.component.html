@@ -197,6 +197,9 @@
             entered {{password.errors?.['minlength'].actualLength}}
           </p>
         </div>
+        <div *ngIf="message">
+          <p class="alert alert-danger">{{message}}</p>
+        </div>
       </div>
       <button
         type="submit"
