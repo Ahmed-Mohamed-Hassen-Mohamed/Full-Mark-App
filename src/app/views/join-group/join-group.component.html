@@ -27,18 +27,18 @@
           type="text"
           class="form-control p-2"
           placeholder="Code"
-          id="group"
+          id="code"
           ngModel
-          #group="ngModel"
+          #code="ngModel"
           required
-          minlength="14"
-          name="group"
+          minlength="8"
+          name="code"
           style="border-radius: 0; border-left: 5px solid #436850"
         />
-        <div *ngIf="group.invalid && group.touched">
-          <p class="alert alert-danger" *ngIf="group.errors?.['minlength']">
-            Title minlength is {{group.errors?.['minlength'].requiredLength}},
-            but You have entered {{group.errors?.['minlength'].actualLength}}
+        <div *ngIf="code.invalid && code.touched">
+          <p class="alert alert-danger" *ngIf="code.errors?.['minlength']">
+            Title minlength is {{code.errors?.['minlength'].requiredLength}},
+            but You have entered {{code.errors?.['minlength'].actualLength}}
           </p>
         </div>
       </div>
