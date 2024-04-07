@@ -1,6 +1,33 @@
 <div class="container">
-  <div class="row m-0 mt-5" style="opacity: 0.5;" *ngIf="groups.length == 0">
-    <p class="alert alert-success text-center p-5 fs-4 fw-bolder">Not joined in any group</p>
+  <div
+    class="row m-0 mt-5"
+    style="opacity: 0.5"
+    *ngIf="groups.length == 0 && isShow"
+  >
+    <p class="alert alert-success text-center p-5 fs-4 fw-bolder">
+      Not joined in any group
+    </p>
+  </div>
+  <div class="row mt-4" *ngIf="groups.length == 0 && !isShow">
+    <div class="col-lg-6 m-auto mt-5 pt-4">
+      <div class="mt-2">
+        <div
+          class="m-auto p-1"
+          style="
+            width: 70%;
+            height: 25vh;
+            border: 2px solid silver;
+            border-bottom: 0px;
+          "
+        >
+          <div class="bg-light" style="height: 100%"></div>
+        </div>
+      </div>
+      <div
+        class="bg-light d-flex align-items-center justify-content-center"
+        style="border: 3px solid silver; height: 20vh"
+      ></div>
+    </div>
   </div>
   <div class="row mt-4">
     <div class="col-lg-4 col-md-6 mb-3" *ngFor="let group of groups">
