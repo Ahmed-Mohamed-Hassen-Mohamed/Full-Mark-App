@@ -24,10 +24,12 @@ export class HomeComponent {
     this.getGroups();
   }
   groups: any[] = [];
+  isShow = false;
   getGroups() {
     this.groupService.getGroups().subscribe({
       next: (groups: any) => {
         this.groups = groups;
+        this.isShow = true;
       },
     });
   }
