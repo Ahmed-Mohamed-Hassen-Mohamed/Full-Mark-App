@@ -87,10 +87,12 @@ export class ExamComponent {
       },
     });
   }
+  isDisable = false;
   Choice(value: any) {
     this.answer = value;
   }
   MakeAnswer() {
+    this.isDisable = true;
     this.examService
       .addAnswer({
         answer: this.answer,
