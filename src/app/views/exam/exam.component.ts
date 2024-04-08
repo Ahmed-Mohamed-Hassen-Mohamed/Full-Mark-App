@@ -101,6 +101,7 @@ export class ExamComponent {
       })
       .subscribe({
         next: (answer: any) => {
+          this.isDisable = false;
           this.answer = 0;
           this.getQuestion();
           this.getCountDocuments();
