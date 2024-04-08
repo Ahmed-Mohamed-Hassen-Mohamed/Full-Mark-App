@@ -58,7 +58,7 @@
         <button
           class="btn btn-secondary p-5 pt-2 pb-2"
           style="border-radius: 0; background-color: #0e42c4"
-          [disabled]="!answer"
+          [disabled]="(!answer || isDisable)"
           (click)="MakeAnswer()"
         >
           {{
